@@ -6,16 +6,23 @@ const Cart = function(items) {
   this.items = items;
 };
 
+//this is a helper function to instantiate a CartItem. Add it to an array
 Cart.prototype.addItem = function(product, quantity) {
-  // TODO: Fill in this instance method to create a new CartItem and add it to this.items
+  let myCartItem = new CartItem(product, quantity);
+  this.items.push(myCartItem)
+
+  // TODOne: Fill in this instance method to create a new CartItem and add it to this.items
 };
 
 Cart.prototype.saveToLocalStorage = function() {
-  // TODO: Fill in this instance method to save the contents of the cart to localStorage
+  localStorage.setItem('product', 'quantity');
+
+  // TODOne: Fill in this instance method to save the contents of the cart to localStorage
 };
 
 Cart.prototype.removeItem = function(item) {
-  // TODO: Fill in this instance method to remove one item from the cart.
+  localStorage.removeItem(item);
+  // TODOne: Fill in this instance method to remove one item from the cart.
   // Note: You will have to decide what kind of parameter to pass in here!
 };
 
