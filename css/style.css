@@ -1,1 +1,37 @@
 /* TODO: Make it awesome */
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap');
+
+html {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 50px;
+}
+
+input, #items {
+    background-color: black;
+    color: rgb(37, 188, 37);
+}
+
+body {
+    animation-name: rainbow;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: rgb(101, 42, 228);
+      top: 0px;}
+    
+    50% {
+        background-color: rgb(209, 74, 40);
+        top: 50px;
+    }
+
+    100% {
+      background-color: rgb(6, 6, 136);
+      top: 0px;
+    }
