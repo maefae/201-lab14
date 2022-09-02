@@ -30,8 +30,18 @@ function showCart() {
   // TODO: Find the table body
 
   // TODO: Iterate over the items in the cart
+
+  for (let i = 0; i < cart.items.length; i++){
+    console.log(cart.items[i].quantity);
+  }
   // TODO: Create a TR
+
+  let trElement = renderEl('tr', tbodyEl);
   // TODO: Create a TD for the delete link, quantity,  and the item
+
+  renderEl('td', trElement);
+  renderEl('td',trElement, cart.items[i].quantity);
+  renderEl('td',trElement, cart.items[i].product);
   // TODO: Add the TR to the TBODY and each of the TD's to the TR
 
 }
